@@ -1,0 +1,40 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.bg-set {
+  background-color: #4d4d4d;
+  height: 870px;
+  width: 100vw;
+}
+
+.main-content {
+  background-color: #c7c7c7; 
+  height: 700px;
+  margin-top: 45px;
+}
+
+.footer {
+  background-color: #0F0F0F;
+  height: 60px;
+  margin-top: 70px;
+}
+
+h1.title {
+  font-family: 'Open Sans';
+  font-weight: 300;
+  font-size: 24px;
+  color: black;
+  text-align: center;
+}
+
+p.credit {
+  color: white;
+  text-align: center;
+  margin-top: 2%;
+}
