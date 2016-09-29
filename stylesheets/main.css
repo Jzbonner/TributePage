@@ -9,14 +9,39 @@ body {
 
 .bg-set {
   background-color: #4d4d4d;
-  height: 870px;
+  height: 1200px;
   width: 100vw;
 }
 
 .main-content {
-  background-color: #c7c7c7; 
-  height: 700px;
+  background-color: #e2dcc1; 
+  height: 1050px;
   margin-top: 45px;
+}
+
+.sideinfo {
+  border-right:2px solid #585858;
+  height: 540px;  
+  margin-left: 10%;
+}
+
+.title-si {
+  text-align: center;
+  padding-top: 8%;
+  padding-bottom: 4%;
+  border-bottom: 2px solid #585858;
+}
+
+p.title {
+  font-size: 14px;
+  text-align: right;
+  margin-top: 4%;
+}
+
+p.info {
+  font-size: 14px;
+  text-align: left;
+  margin-top: 4%;
 }
 
 .footer {
@@ -27,10 +52,67 @@ body {
 
 h1.title {
   font-family: 'Open Sans';
-  font-weight: 300;
+  font-weight: 700;
+  font-size: 42px;
+  color: black;
+  text-align: left;
+  margin-top: 10%;
+}
+
+h2.tag-line {
+  font-family: 'Open Sans';
+  font-weight: 400;
   font-size: 24px;
   color: black;
+  text-align: left;
+  font-style: italic;
+}
+
+.profile-pic {
+  display: block;
+  overflow: hidden;
+  border: 2px solid #e2dcc1;
+  background-image: url("/Images/profile.jpg");
+  background-size: 360px 360px;
+  background-repeat: no-repeat;
+  box-shadow: 10px 10px 5px #e2dcc1;
+  height: 360px;
+  padding: 20px;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.overlay {
+  display: block;
+  width: 100%;
+  background-color: #585858;
+  height: 30px;
+  margin-top: 600px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+p.ovl {
+  font-family: 'Open Sans';
+  font-size: 13px;
   text-align: center;
+  color: white;
+  margin-top: 3%;
+
+}
+
+.profile-pic:hover {
+  cursor: pointer;
+  background-size: 400px 400px;
+  border: 2px solid #585858;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.profile-pic:hover .overlay {
+  margin-top: 300px;
 }
 
 p.credit {
@@ -38,3 +120,11 @@ p.credit {
   text-align: center;
   margin-top: 2%;
 }
+
+
+/*Unified CSS*/
+
+.bdsp {
+  border-bottom: 2px solid #4d4d4d; 
+}
+
