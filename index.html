@@ -3,20 +3,19 @@
 
 <head>
   <meta charset="UTF-8">
+  <link rel="shortcut icon" type="image/x-icon" href="https://goo.gl/68jqx5"/>
   <title>Tribute Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="stylesheets/main.css" media="screen">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-    crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="stylesheets/main.css" media="screen">
 
   <!-- Latest compiled and minified JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-    crossorigin="anonymous"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="js/main.js" type="text/javascript"></script>
 
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
 </head>
 
 <body>
@@ -92,13 +91,54 @@
                   strategy was implemented by the NAACP and later its Legal Defense and Educational Fund under Thurgood Marshall's direction. 
                 </p>
 
-                <!--Markup for Gallery-->
-                <div class="gallery">
-                  <div class="row">
-                    <div class="col-md-5 frame1"></div>
-                    <div class="col-md-5 frame2"></div>
+                <div class="row">
+                  <div class="col-md-4 gallery">   
+                      <div class="row">          
+                        <div class="col-md-2"></div>
+                        <div class="col-md-10">     
+                          <img class="display" id="myImg" src="https://goo.gl/WRZLXm" alt="Undoing Plessy: Charles Hamilton Houston, Race, Labor, and the Law, 1895-1950">
+                          <div id="myModal" class="modal">
+                            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+                            <a href="https://books.google.com/books/about/Undoing_Plessy.html?id=F5kxBwAAQBAJ"><img class="modal-content" id="img01"></a>
+                            <div id="caption"></div>
+                          </div> 
+                        </div> 
+                      </div> 
+                      <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="col-md-10">
+                          <div class="row nav">
+                            <div class="col-md-3">
+                              <img class="nav-btn" src="https://goo.gl/w0lks8" alt="nav" height="20px" width="20px">
+                            </div>
+                            <div class="col-md-3">
+                              <img class="nav-btn" src="https://goo.gl/w0lks8" alt="nav" height="20px" width="20px">
+                            </div>
+                            <div class="col-md-3">
+                              <img class="nav-btn" src="https://goo.gl/w0lks8" alt="nav" height="20px" width="20px">
+                            </div>
+                            <div class="col-md-3">
+                              <img class="nav-btn" src="https://goo.gl/w0lks8" alt="nav" height="20px" width="20px">
+                            </div>                    
+                          </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                      </div>                                        
                   </div>
-                </div>
+                  <div class="col-md-8 gallery">                    
+                      <p class="description">
+                        "To understand Charles Houston's contributions on behalf of those who labored in the black community, and more broadly 
+                        in American society, his life is contextualized within the long Civil Rights Movement. Houston's work was intimately 
+                        connected with many profound efforts to liberate those who were oppressed. Undoing Plessy examines his strategies and 
+                        accomplishments, helping us to further understand the complexities of change in the pre-Brown Era, and offers us compelling 
+                        insights into dilemmas currently facing those in the workplace." 
+                        <br><br>
+                        Daniel R. Ernst Professor of Law, Georgetown University Legal 
+                        History Blog, 01.08.2016
+                      </p>                    
+                  </div>                      
+                </div>  
+
               </div>
             </div>
           </div>

@@ -17,6 +17,7 @@ body {
   background-color: #e2dcc1;
   height: 1050px;
   margin-top: 45px;
+  border-radius: 5px;
 }
 
 .sideinfo {
@@ -50,7 +51,7 @@ th:hover .title {
 }
 
 th:hover + td {
-  background-color:#585858;
+  background-color: #585858;
 }
 
 th:hover + td .info {
@@ -71,18 +72,11 @@ p.info {
   margin-left: 12%;
   margin-top: 2%;
   -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; 
-}
-
-.footer {
-  background-color: #0F0F0F;
-  height: 60px;
-  margin-top: 70px;
+  transition: all 0.3s ease-in-out;
 }
 
 h1.title {
-  font-family: 'Open Sans';
-  font-weight: 700;
+  font-family: 'Roboto', sans-serif;  
   font-size: 42px;
   color: black;
   text-align: left;
@@ -90,21 +84,20 @@ h1.title {
 }
 
 h2.tag-line {
-  font-family: 'Open Sans';
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif; 
   font-size: 24px;
+  margin-top: -2%;
   color: black;
   text-align: left;
-  font-style: italic;
 }
 
 .profile-pic {
   display: block;
   overflow: hidden;
   border: 2px solid #e2dcc1;
-  background-image: url("/Images/profile.jpg");
-  background-size: 360px 360px;
-  background-repeat: no-repeat;
+  background-image: url("https://goo.gl/DweKvK");
+  background-size: 370px 480px;
+  background-repeat: no-repeat; 
   box-shadow: 10px 10px 5px #e2dcc1;
   height: 360px;
   padding: 20px;
@@ -136,9 +129,9 @@ p.ovl {
 }
 
 .profile-pic:hover {
+  -webkit-transform: scale(1.1,1.1);
+  transform:scale(1.1,1.1);
   cursor: pointer;
-  background-size: 400px 400px;
-  border: 2px solid #585858;
 }
 
 .profile-pic:hover .overlay {
@@ -154,23 +147,7 @@ p.body {
   padding-top: 25px;
   margin-right: 35px;
   margin-bottom: -5px;
-}
-
-.frame1,
-.frame2 {
-  margin-top: 8%;
-  margin-left: 3%;
-  height: 280px;
-}
-
-.frame1 {
-  background-image: url("/Images/bookcover.jpg");
-  background-repeat: no-repeat;
-}
-
-.frame2 {
-  background-image: url("/Images/page1.jpg");
-  background-repeat: no-repeat;
+  text-indent: 35px;
 }
 
 p.credit {
@@ -181,6 +158,168 @@ p.credit {
 
 
 /*Unified CSS*/
+
 .bdsp {
   border-bottom: 2px solid #4d4d4d;
 }
+
+/*Gallery CSS*/
+
+.gallery {
+  background-color: #2b4372;
+  height: 330px; 
+  margin-top: 5%;  
+}
+
+.description {
+  color: #d9ddb5;
+  padding-top: 6%;
+  padding-right: 8%;
+  padding-left: 5%;
+}
+
+.nav {
+  margin-top: 15%;
+  height: 30px;
+}
+
+/*Modal CSS*/
+
+img.nav-btn {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  opacity: 1;
+  -webkit-transform: scale(1,1);
+  transform: scale(1,1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+img.nav-btn:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  -webkit-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+img.nav-btn:active {
+  -webkit-transform: translateY(12px);
+  transform: translateY(12px);
+}
+
+img.display {
+  display: block;
+  margin-left: auto;
+  margin-right: 40%;
+  margin-top: 20%;
+  height: 220px;
+  width: 160px;
+  border-radius: 5px;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-transform: scale(1,1);
+  transform: scale(1,1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; 
+}
+
+#myImg:hover {
+  opacity: 0.7;
+  -webkit-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 30%;
+  height: 600px;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  font-size: 15px;
+  color: #ccc;
+  padding-top: 20px;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/*Footer*/
+
+.footer {
+  background-color: #0F0F0F;
+  height: 60px;
+  margin-top: 70px;
+}
+
