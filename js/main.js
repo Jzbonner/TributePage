@@ -15,5 +15,23 @@ $(document).ready(function () {
     span.onclick = function () {
         modal.style.display = "none";
     }
+  
 });
 
+$(document).ready(function () {
+    $('#picture1').click(function() {
+         $('#myImg').attr('src','https://goo.gl/WRZLXm')
+    });
+
+    $('#picture2').click(function () {
+        $('#myImg').attr('src','https://goo.gl/hRvgp6')
+    });
+
+    $('#picture3').click(function() {
+         $('#myImg').attr('src','https://goo.gl/u6lQzt')
+    });
+
+    $('#picture4').click(function() {
+         $('#myImg').attr('src','https://goo.gl/teH3Lv')
+    });
+});

@@ -8,9 +8,13 @@ body {
 }
 
 .bg-set {
-  background-color: #4d4d4d;
+  background-color: #8C9A8C;
+  /*background-color: #4d4d4d;*/
   height: 1200px;
   width: 100vw;
+  background-image: url("https://goo.gl/3V0YkR");
+  background-position: 850px 550px;
+  background-repeat: no-repeat;
 }
 
 .main-content {
@@ -21,7 +25,7 @@ body {
 }
 
 .sideinfo {
-  border-right: 2px solid #585858;
+  /*border-left: 2px solid #585858;*/
   height: 550px;
   margin-left: 10%;
 }
@@ -51,7 +55,9 @@ th:hover .title {
 }
 
 th:hover + td {
-  background-color: #585858;
+  background-color: #BD5632;
+  /*background-color: #585858;*/
+  
 }
 
 th:hover + td .info {
@@ -76,7 +82,8 @@ p.info {
 }
 
 h1.title {
-  font-family: 'Roboto', sans-serif;  
+  font-family: 'Poiret One', cursive;
+  /*font-family: 'Roboto', sans-serif;*/  
   font-size: 42px;
   color: black;
   text-align: left;
@@ -84,17 +91,23 @@ h1.title {
 }
 
 h2.tag-line {
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Raleway', sans-serif;
+  /*font-family: 'Roboto', sans-serif;*/ 
   font-size: 24px;
   margin-top: -2%;
   color: black;
   text-align: left;
 }
 
+p.body, p.title, p.info, p.credit, p.sig {
+  font-family: 'Raleway', sans-serif;
+}
+
 .profile-pic {
   display: block;
   overflow: hidden;
   border: 2px solid #e2dcc1;
+  border-radius: 15px;
   background-image: url("https://goo.gl/DweKvK");
   background-size: 370px 480px;
   background-repeat: no-repeat; 
@@ -113,7 +126,9 @@ h2.tag-line {
 .overlay {
   display: block;
   width: 100%;
-  background-color: #585858;
+  background-color: #BD5632; 
+  border-radius: 8px;
+  /*background-color: #585858;*/
   height: 30px;
   margin-top: 600px;
   -webkit-transition: all 0.3s ease-in-out;
@@ -124,7 +139,7 @@ p.ovl {
   font-family: 'Open Sans';
   font-size: 13px;
   text-align: center;
-  color: white;
+  color: #e2dcc1;
   margin-top: 2%;
 }
 
@@ -150,13 +165,6 @@ p.body {
   text-indent: 35px;
 }
 
-p.credit {
-  color: white;
-  text-align: center;
-  margin-top: 1%;
-}
-
-
 /*Unified CSS*/
 
 .bdsp {
@@ -166,7 +174,7 @@ p.credit {
 /*Gallery CSS*/
 
 .gallery {
-  background-color: #2b4372;
+  background-color: #497080;  
   height: 330px; 
   margin-top: 5%;  
 }
@@ -176,6 +184,16 @@ p.credit {
   padding-top: 6%;
   padding-right: 8%;
   padding-left: 5%;
+  padding-bottom: 5%;
+  border-bottom: 2px solid #e2dcc1;
+  font-family: 'Poriet One', cursive;
+  font-size: 13px;
+}
+
+.sig {
+  text-align: right;
+  color: #e2dcc1;
+  font-size: 14px;
 }
 
 .nav {
@@ -204,8 +222,8 @@ img.nav-btn:hover {
 }
 
 img.nav-btn:active {
-  -webkit-transform: translateY(12px);
-  transform: translateY(12px);
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
 }
 
 img.display {
@@ -223,12 +241,14 @@ img.display {
   cursor: pointer;
   -webkit-transform: scale(1,1);
   transform: scale(1,1);
+  -webkit-filter: contrast(115%);
+  filter: contrast(115%);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; 
 }
 
 #myImg:hover {
-  opacity: 0.7;
+  opacity: 0.9;
   -webkit-transform: scale(1.1,1.1);
   transform: scale(1.1,1.1);
 }
@@ -319,7 +339,36 @@ img.display {
 
 .footer {
   background-color: #0F0F0F;
-  height: 60px;
+  height: 75px;
   margin-top: 70px;
 }
 
+table.dis-credit {
+  display: block;
+  padding-left: 1%;
+  margin-top: -4.3%;
+  margin-left: 27%;
+}
+
+td.link {
+  width: 14%; 
+  opacity: 1;
+  -webkit-transform: scale(1,1);
+  transform: scale(1,1);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}  
+
+td.link:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  -webkit-transform: scale(1.1,1.1);
+  transform: scale(1.1,1.1);
+} 
+
+p.credit {
+  color: white;
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 1.5%;
+}
