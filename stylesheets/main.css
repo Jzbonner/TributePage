@@ -75,7 +75,7 @@ p.title {
 p.info {
   font-size: 14px;
   text-align: left;
-  margin-left: 12%;
+  margin-left: 8%;
   margin-top: 2%;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -99,7 +99,7 @@ h2.tag-line {
   text-align: left;
 }
 
-p.body, p.title, p.info, p.credit, p.sig {
+p.body, p.title, p.info, p.credit, p.sig, p.description {
   font-family: 'Raleway', sans-serif;
 }
 
@@ -179,15 +179,14 @@ p.body {
   margin-top: 5%;  
 }
 
-.description {
+p.description {
   color: #d9ddb5;
   padding-top: 6%;
   padding-right: 8%;
   padding-left: 5%;
   padding-bottom: 5%;
   border-bottom: 2px solid #e2dcc1;
-  font-family: 'Poriet One', cursive;
-  font-size: 13px;
+  font-size: 13.5px;
 }
 
 .sig {
@@ -208,6 +207,7 @@ img.nav-btn {
   margin-right: auto;
   margin-left: auto;
   opacity: 1;
+  box-shadow: 2px 2px 2px #4d4d4d;
   -webkit-transform: scale(1,1);
   transform: scale(1,1);
   -webkit-transition: all 0.3s ease-in-out;
@@ -216,7 +216,7 @@ img.nav-btn {
 
 img.nav-btn:hover {
   cursor: pointer;
-  opacity: 0.7;
+  box-shadow: 4px 4px 4px #BD5632;
   -webkit-transform: scale(1.1,1.1);
   transform: scale(1.1,1.1);
 }
@@ -338,9 +338,11 @@ img.display {
 /*Footer*/
 
 .footer {
-  background-color: #0F0F0F;
+  background-color:#504439;
+  /*background-color: #0F0F0F;*/
   height: 75px;
   margin-top: 70px;
+  z-index: 1;
 }
 
 table.dis-credit {
@@ -370,5 +372,11 @@ p.credit {
   color: white;
   text-align: left;
   margin-left: 5%;
-  margin-top: 1.5%;
+  margin-top: 1.7%;
+}
+
+img.license {
+  float: right;
+  margin-top: -4.3%;
+  margin-right: 5%;
 }
